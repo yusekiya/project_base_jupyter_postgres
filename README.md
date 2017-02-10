@@ -26,5 +26,7 @@ The format is the same as `jupyter.env`.
 ``` ini
 POSTGRES_PASSWORD=your_db_password
 POSTGRES_USER=your_db_user_name
+# Database directory in container
+PGDATA=/var/lib/postgresql/data/pgdata
 ```
 
