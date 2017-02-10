@@ -1,4 +1,4 @@
 db.env
 jupyter.env
-database/*
-!database/.gitignore
+db/*
+!db/.gitignore
