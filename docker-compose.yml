@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - './src:/project/src'
+      - './src:/project/notebook/module'
       - './img:/project/img'
       - './notebook:/project/notebook'
       - './data:/project/data'
