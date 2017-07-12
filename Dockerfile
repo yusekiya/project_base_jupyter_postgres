@@ -7,4 +7,4 @@ RUN echo deb http://ftp.uk.debian.org/debian jessie-backports main >> /etc/apt/s
     mkdir -p /project/notebook
 COPY jupyter_notebook_config.py /root/.jupyter/
 WORKDIR "/project"
-CMD ["/opt/conda/bin/jupyter", "notebook"]
+CMD ["/opt/conda/bin/jupyter", "notebook", "--allow-root"]
