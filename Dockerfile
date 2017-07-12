@@ -5,6 +5,6 @@ RUN echo deb http://ftp.uk.debian.org/debian jessie-backports main >> /etc/apt/s
     conda install -y --quiet jupyter psycopg2 &&\
     # conda install -y --quiet -c conda-forge jupyter_nbextensions_configurator jupyter_contrib_nbextensions &&\
     mkdir -p /project/notebook
-COPY jupyter_notebook_config.py /root/.jupyter/
+COPY jupyter_notebook_config.py /opt/conda/etc/jupyter/
 WORKDIR "/project"
 CMD ["/opt/conda/bin/jupyter", "notebook", "--allow-root"]
